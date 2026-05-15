@@ -1,0 +1,43 @@
+META_HEADER|GRP-INV-2026-04-08-49|GROUP|MULTI|08-04-2026|CUST-00034,CUST-00035
+=========================================================
+              HOTEL GROUP INVOICE
+=========================================================
+Record ID: GRP-INV-2026-04-08-49     Date: 08-04-2026
+
+---------------------------------------------------------
+STAY DETAILS: Shreya Gupta (Room 209)
+---------------------------------------------------------
+Customer ID : CUST-00034
+Room Type   : SUITE
+Duration    : 05-02-2025 14:30:00 to 08-02-2025 11:00:00 (3 Nights)
+Base Room Rate (3 Nights x 26250.0)        : Rs. 78750.00
+
+Additional Amenities:
+- AC (1.2 KWh)                             : Rs.  1260.00
+- Attached Bath (Attached Bathroom Available) : Rs.   300.00
+- Wi-Fi (2G signal)                        : Rs.     0.00
+
+---------------------------------------------------------
+STAY DETAILS: Harish Verma (Room 211)
+---------------------------------------------------------
+Customer ID : CUST-00035
+Room Type   : REGULAR
+Duration    : 05-02-2025 14:30:00 to 08-02-2025 11:00:00 (3 Nights)
+Base Room Rate (3 Nights x 3125.0)         : Rs.  9375.00
+
+Additional Amenities:
+- AC (1.2 KWh)                             : Rs.  1260.00
+- Wi-Fi (2G signal)                        : Rs.     0.00
+
+---------------------------------------------------------
+CONSOLIDATED CHARGES
+---------------------------------------------------------
+Total Base Cost                            : Rs. 88125.00
+Total Amenities Cost                       : Rs.  2820.00
+
+Tax (18%)                                  : Rs. 16370.10
+
+=========================================================
+GRAND TOTAL AMOUNT PAID                    : Rs. 107315.10
+=========================================================
+          Thank you for choosing our hotel!

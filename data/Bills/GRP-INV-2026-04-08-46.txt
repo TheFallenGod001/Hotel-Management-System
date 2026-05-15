@@ -1,0 +1,55 @@
+META_HEADER|GRP-INV-2026-04-08-46|GROUP|MULTI|08-04-2026|CUST-00031,CUST-00032,CUST-00033
+=========================================================
+              HOTEL GROUP INVOICE
+=========================================================
+Record ID: GRP-INV-2026-04-08-46     Date: 08-04-2026
+
+---------------------------------------------------------
+STAY DETAILS: Vikash Patel (Room 201)
+---------------------------------------------------------
+Customer ID : CUST-00031
+Room Type   : REGULAR
+Duration    : 14-01-2025 15:30:00 to 17-01-2025 10:00:00 (3 Nights)
+Base Room Rate (3 Nights x 3125.0)         : Rs.  9375.00
+
+Additional Amenities:
+- AC (1.2 KWh)                             : Rs.  1260.00
+- Wi-Fi (2G signal)                        : Rs.     0.00
+
+---------------------------------------------------------
+STAY DETAILS: Neelam Singh (Room 203)
+---------------------------------------------------------
+Customer ID : CUST-00032
+Room Type   : SUITE
+Duration    : 14-01-2025 15:30:00 to 17-01-2025 10:00:00 (3 Nights)
+Base Room Rate (3 Nights x 26250.0)        : Rs. 78750.00
+
+Additional Amenities:
+- AC (1.2 KWh)                             : Rs.  1260.00
+- Attached Bath (Attached Bathroom Available) : Rs.   300.00
+- Wi-Fi (2G signal)                        : Rs.     0.00
+
+---------------------------------------------------------
+STAY DETAILS: Mohit Rao (Room 205)
+---------------------------------------------------------
+Customer ID : CUST-00033
+Room Type   : REGULAR
+Duration    : 14-01-2025 15:30:00 to 17-01-2025 10:00:00 (3 Nights)
+Base Room Rate (3 Nights x 3125.0)         : Rs.  9375.00
+
+Additional Amenities:
+- AC (1.2 KWh)                             : Rs.  1260.00
+- Wi-Fi (2G signal)                        : Rs.     0.00
+
+---------------------------------------------------------
+CONSOLIDATED CHARGES
+---------------------------------------------------------
+Total Base Cost                            : Rs. 97500.00
+Total Amenities Cost                       : Rs.  4080.00
+
+Tax (18%)                                  : Rs. 18284.40
+
+=========================================================
+GRAND TOTAL AMOUNT PAID                    : Rs. 119864.40
+=========================================================
+          Thank you for choosing our hotel!
