@@ -1,0 +1,302 @@
+.root {
+    /* Variables for colors work perfectly */
+    -fx-home-background-color: #090201;
+    -fx-home-card-color: #3e2418;
+    -fx-other-background-color: #210804;
+}
+
+.home-background {
+    -fx-background-color: -fx-home-background-color;
+}
+
+.dashboard-background {
+    -fx-background-color: -fx-other-background-color;
+}
+
+.home-card {
+    -fx-background-color: -fx-home-card-color; 
+    
+    /* Hardcode sizes with 'px' to prevent the ClassCastException */
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-padding: 20px;
+    -fx-spacing: 15px;
+    
+    -fx-border-color: transparent;
+    -fx-border-width: 2px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, #533222, 15, 0, 0, 0);
+    -fx-cursor: hand;
+}
+
+.home-card:hover {
+    -fx-background-color: #230905;
+    -fx-translate-y: -5px;
+    -fx-effect: dropshadow(gaussian, #794f1fb4, 20, 0, 0, 0);
+    
+    /* Keep radius consistent on hover */
+    -fx-border-color: #3e2417;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px; 
+}
+
+.home-card .label, .label_copy {
+    -fx-font-size: 16px;
+    -fx-text-fill: #dfc8a9; 
+    -fx-font-weight: bold;
+}
+
+.label{
+    -fx-text-fill: #dfc8a9;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.occupancy-container {
+    -fx-background-color: #331d1372;
+    -fx-background-radius: 20;     /* Rounded corners */
+    -fx-border-radius: 20;
+    -fx-border-width: 2;
+    
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 15, 0, 0, 8);
+}
+
+/* The Gauge Component (StackPane) */
+.occupancy-gauge {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 15, 0, 0, 5);
+}
+
+/* The background ring of the gauge */
+.gauge-track {
+    -fx-stroke: #4D2C1D; /* Deep Brown */
+    -fx-stroke-width: 15;
+}
+
+/* The moving part of the gauge */
+.gauge-progress {
+    -fx-stroke: #DFC8A9; /* Light Beige */
+    -fx-stroke-width: 15;
+    -fx-stroke-line-cap: round;
+}
+
+/* The percentage number in the middle */
+.percentage-text {
+    -fx-fill: #DFC8A9;
+    -fx-font-family: "Segoe UI";
+    -fx-font-weight: bold;
+}
+
+/* The "PERCENTAGE OF ROOMS OCCUPIED" text */
+.gauge-description {
+    -fx-fill: #dfc8a9;
+    -fx-font-family: "Segoe UI";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.searcher-box {
+    -fx-background-color: rgba(51, 29, 19, 0.6); /* Your #331d13 with 60% opacity */
+    -fx-background-radius: 20;
+    -fx-padding: 20;
+    -fx-border-color: #794F1F;
+    -fx-border-radius: 20;
+    -fx-border-width: 1;
+}
+
+.searcher-header {
+    -fx-fill: #DFC8A9;
+    -fx-font-family: "Segoe UI";
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.search-input {
+    -fx-background-color: #4D2C1D;
+    -fx-text-fill: #DFC8A9;
+    -fx-prompt-text-fill: rgba(223, 200, 169, 0.5);
+    -fx-background-radius: 10;
+    -fx-padding: 8;
+}
+
+.action-button {
+    -fx-background-color: #794F1F;
+    -fx-text-fill: #DFC8A9;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+
+.action-button:hover {
+    -fx-background-color: #6A3B23;
+}
+
+.results-area {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+    -fx-background-radius: 10;
+}
+
+/* =========================================
+   MENU BUTTON & DROPDOWN STYLING
+   ========================================= */
+
+.filter-button {
+    -fx-background-color: #210804;
+    -fx-text-fill: #dfc8a9;
+    -fx-border-color: #dfc8a9;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-padding: 4px 10px;
+    -fx-cursor: hand;
+}
+
+.filter-button .label {
+    -fx-text-fill: #dfc8a9;
+}
+
+.filter-button:hover {
+    -fx-background-color: #3a1008;
+}
+
+.context-menu {
+    -fx-background-color: #090201;
+    -fx-border-color: #dfc8a9;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+}
+
+.menu-item {
+    -fx-padding: 5px 15px 5px 15px;
+}
+
+.menu-item .label {
+    -fx-text-fill: #dfc8a9;
+}
+
+.menu-item:focused {
+    -fx-background-color: #210804;
+}
+
+.check-menu-item:checked > .left-container > .check,
+.radio-menu-item:checked > .left-container > .radio {
+    -fx-background-color: #dfc8a9;
+    -fx-shape: "M0,5H2L4,8L8,0H10L4,10Z"; /* Standard checkmark vector */
+}
+
+/* The separator line */
+.separator-menu-item .line {
+    -fx-border-color: #dfc8a9;
+    -fx-border-width: 1px 0 0 0;
+    -fx-opacity: 0.3;
+}
+
+.scroll-bar:vertical, .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .track, .scroll-bar:horizontal .track {
+    -fx-background-color: #090201;
+    -fx-border-color: transparent;
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar:vertical .thumb, .scroll-bar:horizontal .thumb {
+    -fx-background-color: #210804;
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar:vertical .thumb:hover, .scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: #dfc8a9;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow {
+    -fx-shape: " "; 
+}
+
+
+.back-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #dfc8a9;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-color: #dfc8a9;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-padding: 8px 15px;
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}
+
+.back-button:hover {
+    -fx-background-color: #3a1008;
+    -fx-opacity: 1.0;
+}
+
+.back-button:pressed {
+    -fx-background-color: #dfc8a9;
+    -fx-text-fill: #210804;
+}
+
+.radio-button {
+    -fx-text-fill: #dfc8a9;
+    -fx-font-family: "Segoe UI";
+    -fx-cursor: hand;
+}
+
+.radio-button .radio {
+    -fx-background-color: #4D2C1D;
+    -fx-border-color: #794F1F;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: #dfc8a9; /* Beige dot when selected */
+}
+
+/* CheckBox Styling (Amenities) */
+.check-box {
+    -fx-text-fill: #dfc8a9;
+    -fx-font-family: "Segoe UI";
+    -fx-cursor: hand;
+}
+
+.check-box .box {
+    -fx-background-color: #4D2C1D;
+    -fx-border-color: #794F1F;
+    -fx-background-radius: 3px;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #dfc8a9; /* Beige checkmark */
+}
+
+/* Status & Error Feedback */
+/* Use these classes in your Java code: statusLabel.getStyleClass().add("status-success"); */
+.status-success {
+    -fx-text-fill: #c1e884; /* The light green you used in Java */
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(193, 232, 132, 0.3), 10, 0, 0, 0);
+}
+
+.status-error {
+    -fx-text-fill: #e69191; /* The soft red you used in Java */
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(230, 145, 145, 0.3), 10, 0, 0, 0);
+}
+
+/* Form Spacing Helper */
+.form-container {
+    -fx-padding: 30px;
+    -fx-background-color: rgba(51, 29, 19, 0.4); /* Subtle overlay */
+    -fx-background-radius: 20px;
+    -fx-border-color: rgba(121, 79, 31, 0.3);
+    -fx-border-width: 1px;
+}
